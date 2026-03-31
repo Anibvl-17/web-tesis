@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  --color-argilla-red: #F15025;
+  --color-argilla-beige: #FFEFD3;
+  --color-carbon-black: #191919;
+  --color-ink-black: #001A23;
+  --color-grey-oliva: #818479;
+}
+
+:root {
+  background-color: #001A23;
+}
