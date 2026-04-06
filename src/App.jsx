@@ -38,9 +38,9 @@ function App() {
         </p>
 
         {/* Explicacion Problemas */}
-        <div className="text-start flex flex-row flex-wrap gap-4 mt-8">
+        <div className="text-start flex flex-row flex-wrap gap-8 mt-8">
           {/* Usabilidad limitada */}
-          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-md">
+          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-md hover:scale-104 shadow-lg">
             <span>
               <FiUserX className="size-6 text-red-500" />
             </span>
@@ -56,7 +56,7 @@ function App() {
           </div>
 
           {/* Limitacion tecnica */}
-          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-md">
+          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-md hover:scale-104 shadow-lg">
             <span>
               <SiSpeedtest className="size-6 text-red-500 scale-x-[-1]" />{" "}
               {/* scale-x-[-1] es para girar la imagen */}
@@ -73,7 +73,7 @@ function App() {
           </div>
 
           {/* Sin telemetría ni control de costos */}
-          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-md">
+          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-md hover:scale-104 shadow-lg">
             <span>
               <MdMoneyOff className="size-6 text-red-500" />
             </span>
@@ -89,7 +89,7 @@ function App() {
           </div>
 
           {/* Soporte sin trazabilidad */}
-          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-md">
+          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-md hover:scale-104 shadow-lg">
             <span>
               <MdHistoryToggleOff className="size-6 text-red-500" />
             </span>
