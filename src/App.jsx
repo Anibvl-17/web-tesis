@@ -2,6 +2,7 @@ import { FiUserX } from "react-icons/fi";
 import logo from "./assets/argilla-icon-light.png";
 import { SiSpeedtest } from "react-icons/si";
 import { MdHistoryToggleOff, MdMoneyOff } from "react-icons/md";
+import { IoMdCheckmark } from "react-icons/io";
 
 function App() {
   return (
@@ -15,7 +16,6 @@ function App() {
         </span>
         <span>{/* Botones de navegacion */}</span>
       </nav>
-
       {/* HERO */}
       <div className="px-96 py-42 text-center">
         <h1 className="text-6xl/normal font-bold pb-12">
@@ -27,7 +27,6 @@ function App() {
           tiempo real, curvas ilimitadas y soporte técnico a tu alcance.
         </p>
       </div>
-
       {/* Problema */}
       <div className="bg-mist-900 py-8 px-96 text-center">
         <h2 className="text-3xl/relaxed font-bold">
@@ -36,7 +35,6 @@ function App() {
         <p className="text-gray-400">
           Los equipos importados no están pensados para los ceramistas. Te explicamos porqué:
         </p>
-
         {/* Explicacion Problemas */}
         <div className="text-start flex flex-row flex-wrap gap-8 mt-8">
           {/* Usabilidad limitada */}
@@ -98,12 +96,71 @@ function App() {
                 Soporte sin trazabilidad
               </h3>
               <p className="text-gray-400">
-                No existe registro de vida útil ni alertas sobre variaciones anormales, perdiendo oportunidades de prevención y mantenimiento.
+                No existe registro de vida útil ni alertas sobre variaciones anormales, perdiendo
+                oportunidades de prevención y mantenimiento.
               </p>
             </div>
           </div>
+        </div>{" "}
+        {/* /Explicacion Problemas */}
+      </div>{" "}
+      {/* /Problema */}
+      {/* Propuesta */}
+      <div className="py-8 px-96 flex flex-row justify-between items-center gap-24">
+        <div className="flex flex-col gap-6">
+          <h2 className="text-3xl/snug font-bold">
+            Sistema IoT para Monitoreo y Control <br />
+            de Hornos Cerámicos Eléctricos
+          </h2>
+          <p className="max-w-lg text-pretty text-mist-400">
+            Una plataforma conectada a un controlador personalizado en tu horno. Controla, monitorea
+            y optimiza tus quemas desde cualquier lugar del mundo.
+          </p>
+
+          {/* Caracteristicas destacables */}
+          <div className="flex flex-row gap-16 text-sm">
+            <div className="flex flex-col gap-3">
+              <span className="flex flex-row gap-2 items-center">
+                <IoMdCheckmark className="text-red-500 size-5" /> Control remoto
+              </span>
+
+              <span className="flex flex-row gap-2 items-center">
+                <IoMdCheckmark className="text-red-500 size-5" /> Interfaz gráfica amigable
+              </span>
+
+              <span className="flex flex-row gap-2 items-center">
+                <IoMdCheckmark className="text-red-500 size-5" /> Alertas automáticas
+              </span>
+
+              <span className="flex flex-row gap-2 items-center">
+                <IoMdCheckmark className="text-red-500 size-5" /> Programas de quema ilimitados
+              </span>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <span className="flex flex-row gap-2 items-center">
+                <IoMdCheckmark className="text-red-500 size-5" /> Telemetría en tiempo real
+              </span>
+
+              <span className="flex flex-row gap-2 items-center">
+                <IoMdCheckmark className="text-red-500 size-5" /> Cálculo de costo energético
+              </span>
+
+              <span className="flex flex-row gap-2 items-center">
+                <IoMdCheckmark className="text-red-500 size-5" /> Historial de quemas
+              </span>
+
+              <span className="flex flex-row gap-2 items-center">
+                <IoMdCheckmark className="text-red-500 size-5" /> Soporte técnico integrado
+              </span>
+            </div>
+          </div>
         </div>
-      </div>
+
+        {/* TODO: Reemplazar por imagen */}
+        <div className="bg-mist-700 size-100 flex items-center justify-center">Imagen</div>
+      </div>{" "}
+      {/* /Propuesta */}
     </>
   );
 }
