@@ -1,8 +1,13 @@
 import { FiUserX } from "react-icons/fi";
 import logo from "./assets/argilla-icon-light.png";
 import { SiSpeedtest } from "react-icons/si";
-import { MdHistoryToggleOff, MdMoneyOff } from "react-icons/md";
+import { MdHistoryToggleOff, MdMoneyOff, MdOutlineNotificationsActive } from "react-icons/md";
 import { IoMdCheckmark } from "react-icons/io";
+import { RiRemoteControlLine } from "react-icons/ri";
+import { LuChartSpline, LuX } from "react-icons/lu";
+import { PiPulseBold } from "react-icons/pi";
+import { TbReportAnalytics } from "react-icons/tb";
+import { BiX } from "react-icons/bi";
 
 function App() {
   return (
@@ -155,7 +160,6 @@ function App() {
             </div>
           </div>
         </div>
-
         {/* Representacion visual */}
         <div className="bg-mist-900/35 border-2 border-mist-800 w-3xl p-12 rounded-xl">
           <div className="flex justify-between items-center">
@@ -189,13 +193,228 @@ function App() {
           </div>
 
           <div className="flex flex-row justify-around">
-            <button className="text-sm bg-red-700 px-8 py-2 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110">Detener</button>
-            <button className="text-sm border-2 border-red-700 px-8 py-1 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110 hover:bg-red-900/50">Detalles</button>
+            <button className="text-sm bg-red-700 px-8 py-2 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110">
+              Detener
+            </button>
+            <button className="text-sm border-2 border-red-700 px-8 py-1 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110 hover:bg-red-900/50">
+              Detalles
+            </button>
           </div>
-        </div> {/* /Representacion visual */}
-
-      </div>{" "}
+        </div>{" "}
+        {/* /Representacion visual */}
+      </div>
       {/* /Propuesta */}
+      {/* Funcionalidades */}
+      <div className="bg-mist-900 py-24 px-96 text-center">
+        <h2 className="text-3xl/relaxed font-bold">Todo lo que necesitas, en un solo lugar.</h2>
+        <p className="text-gray-400">
+          Un ecosistema que te da autonomía, seguridad y control sobre tu producción.
+        </p>
+        {/* Cards funcionalidades */}
+        <div className="text-start flex flex-row flex-wrap gap-8 mt-12">
+          {/* Control remoto */}
+          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-sm hover:scale-104 shadow-lg">
+            <span>
+              <RiRemoteControlLine className="size-6 text-red-500" />
+            </span>
+            <div>
+              <h3 className="text-lg font-semibold flex flex-row gap-4 mb-2">Control remoto</h3>
+              <p className="text-gray-400">
+                Inicia, detén o modifica tus programas de quema desde tu teléfono o computador, sin
+                necesidad de estar presente.
+              </p>
+            </div>
+          </div>
+
+          {/* Telemetría en tiempo real */}
+          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-sm hover:scale-104 shadow-lg">
+            <span>
+              <PiPulseBold className="size-6 text-red-500" />
+            </span>
+            <div>
+              <h3 className="text-lg font-semibold flex flex-row gap-4 mb-2">
+                Telemetría en tiempo real
+              </h3>
+              <p className="text-gray-400">
+                Monitorea temperatura, voltaje, amperaje y consumo eléctrico con estimación de
+                costos incluida.
+              </p>
+            </div>
+          </div>
+
+          {/* Programas ilimitados */}
+          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-sm hover:scale-104 shadow-lg">
+            <span>
+              <LuChartSpline className="size-6 text-red-500" />
+            </span>
+            <div>
+              <h3 className="text-lg font-semibold flex flex-row gap-4 mb-2">
+                Programas ilimitados
+              </h3>
+              <p className="text-gray-400">
+                Supera las limitaciones de los controladores tradicionales. Almacena y gestiona
+                todos los programas que necesites.
+              </p>
+            </div>
+          </div>
+
+          {/* Alertas inteligentes */}
+          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-sm hover:scale-104 shadow-lg">
+            <span>
+              <MdOutlineNotificationsActive className="size-6 text-red-500" />
+            </span>
+            <div>
+              <h3 className="text-lg font-semibold flex flex-row gap-4 mb-2">
+                Alertas inteligentes
+              </h3>
+              <p className="text-gray-400">
+                Recibe notificaciones sobre niveles anormales de corriente y posibles fallas antes
+                de que ocurran.
+              </p>
+            </div>
+          </div>
+
+          {/* Reportes detallados */}
+          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-sm hover:scale-104 shadow-lg">
+            <span>
+              <TbReportAnalytics className="size-6 text-red-500" />
+            </span>
+            <div>
+              <h3 className="text-lg font-semibold flex flex-row gap-4 mb-2">
+                Reportes detallados
+              </h3>
+              <p className="text-gray-400">
+                Historial completo de quemas con consumo, reparaciones y mantenciones realizadas al
+                equipo.
+              </p>
+            </div>
+          </div>
+
+          {/* Soporte Técnico */}
+          <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-sm hover:scale-104 shadow-lg">
+            <span>
+              <TbReportAnalytics className="size-6 text-red-500" />
+            </span>
+            <div>
+              <h3 className="text-lg font-semibold flex flex-row gap-4 mb-2">
+                Soporte técnico integrado
+              </h3>
+              <p className="text-gray-400">
+                Realiza consultas o solicitudes al equipo técnico de manera fácil y rápida, con
+                envío automático de reportes.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* /Cards funcionalidades */}
+      </div>
+      {/* /Funcionalidades */}
+      {/* Tabla comparativa */}
+      <div className="py-24 px-96 text-center flex flex-col">
+        <h2 className="text-4xl/relaxed font-bold">La diferencia es clara</h2>
+        <p className="text-gray-400">
+          Compara las características de los controladores tradicionales con el sistema IoT de
+          Argillá:
+        </p>
+        <table className="min-w-2x mt-16">
+          <thead>
+            <tr className="border-b border-mist-700">
+              <th className="font-normal text-mist-400 text-start w-2/5 pb-4">Característica</th>
+              <th className="font-normal text-mist-400 text-center pb-4">
+                Controlador Tradicional
+              </th>
+              <th className="font-semibold text-red-500 text-center pb-4">Controlador Argillá</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-mist-800">
+              <td className="py-4 font-normal text-start">Interfaz</td>
+              <td className="py-4 font-normal text-sm text-center text-mist-400">
+                Display de 7 segmentos
+              </td>
+              <td className="py-4 font-normal text-sm text-center">Pantalla táctil + App Web</td>
+            </tr>
+            <tr className="border-b border-mist-800">
+              <td className="py-4 font-normal text-start">Idioma</td>
+              <td className="py-4 font-normal text-sm text-center text-mist-400">
+                Inglés abreviado
+              </td>
+              <td className="py-4 font-normal text-sm text-center">Español</td>
+            </tr>
+            <tr className="border-b border-mist-800">
+              <td className="py-4 font-normal text-start">Programas de cocción</td>
+              <td className="py-4 font-normal text-sm text-center text-mist-400">Máximo 4</td>
+              <td className="py-4 font-normal text-sm text-center">Ilimitados</td>
+            </tr>
+            <tr className="border-b border-mist-800">
+              <td className="py-4 font-normal text-start">Control remoto</td>
+              <td className="py-4 font-normal text-sm">
+                <span className="flex flex-row justify-center">
+                  <LuX className="size-5 text-mist-400" />
+                </span>
+              </td>
+              <td className="py-4 font-normal text-sm">
+                <span className="flex flex-row justify-center">
+                  <IoMdCheckmark className="size-5 text-red-500" />
+                </span>
+              </td>
+            </tr>
+            <tr className="border-b border-mist-800">
+              <td className="py-4 font-normal text-start">Telemetría en tiempo real</td>
+              <td className="py-4 font-normal text-sm">
+                <span className="flex flex-row justify-center">
+                  <LuX className="size-5 text-mist-400" />
+                </span>
+              </td>
+              <td className="py-4 font-normal text-sm">
+                <span className="flex flex-row justify-center">
+                  <IoMdCheckmark className="size-5 text-red-500" />
+                </span>
+              </td>
+            </tr>
+            <tr className="border-b border-mist-800">
+              <td className="py-4 font-normal text-start">Alertas automáticas</td>
+              <td className="py-4 font-normal text-sm">
+                <span className="flex flex-row justify-center">
+                  <LuX className="size-5 text-mist-400" />
+                </span>
+              </td>
+              <td className="py-4 font-normal text-sm">
+                <span className="flex flex-row justify-center">
+                  <IoMdCheckmark className="size-5 text-red-500" />
+                </span>
+              </td>
+            </tr>
+            <tr className="border-b border-mist-800">
+              <td className="py-4 font-normal text-start">Reportes e historial</td>
+              <td className="py-4 font-normal text-sm">
+                <span className="flex flex-row justify-center">
+                  <LuX className="size-5 text-mist-400" />
+                </span>
+              </td>
+              <td className="py-4 font-normal text-sm">
+                <span className="flex flex-row justify-center">
+                  <IoMdCheckmark className="size-5 text-red-500" />
+                </span>
+              </td>
+            </tr>
+            <tr className="border-b border-mist-800">
+              <td className="py-4 font-normal text-start">Soporte técnico</td>
+              <td className="py-4 font-normal text-sm">
+                <span className="flex flex-row justify-center">
+                  <LuX className="size-5 text-mist-400" />
+                </span>
+              </td>
+              <td className="py-4 font-normal text-sm">
+                <span className="flex flex-row justify-center">
+                  <IoMdCheckmark className="size-5 text-red-500" />
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {/* /Tabla comparativa */}
     </>
   );
 }
