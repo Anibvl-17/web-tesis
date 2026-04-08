@@ -319,7 +319,7 @@ function App() {
         <table className="min-w-2x mt-16">
           <thead>
             <tr className="border-b border-mist-700">
-              <th className="font-normal text-mist-400 text-start w-2/5 pb-4">Característica</th>
+              <th className="font-normal text-mist-400 text-start w-2/5 pb-4 ps-4">Característica</th>
               <th className="font-normal text-mist-400 text-center pb-4">
                 Controlador Tradicional
               </th>
@@ -328,26 +328,26 @@ function App() {
           </thead>
           <tbody>
             <tr className="border-b border-mist-800">
-              <td className="py-4 font-normal text-start">Interfaz</td>
+              <td className="ps-4 py-4 font-normal text-start">Interfaz</td>
               <td className="py-4 font-normal text-sm text-center text-mist-400">
                 Display de 7 segmentos
               </td>
               <td className="py-4 font-normal text-sm text-center">Pantalla táctil + App Web</td>
             </tr>
             <tr className="border-b border-mist-800">
-              <td className="py-4 font-normal text-start">Idioma</td>
+              <td className="ps-4 py-4 font-normal text-start">Idioma</td>
               <td className="py-4 font-normal text-sm text-center text-mist-400">
                 Inglés abreviado
               </td>
               <td className="py-4 font-normal text-sm text-center">Español</td>
             </tr>
             <tr className="border-b border-mist-800">
-              <td className="py-4 font-normal text-start">Programas de cocción</td>
+              <td className="ps-4 py-4 font-normal text-start">Programas de cocción</td>
               <td className="py-4 font-normal text-sm text-center text-mist-400">Máximo 4</td>
               <td className="py-4 font-normal text-sm text-center">Ilimitados</td>
             </tr>
             <tr className="border-b border-mist-800">
-              <td className="py-4 font-normal text-start">Control remoto</td>
+              <td className="ps-4 py-4 font-normal text-start">Control remoto</td>
               <td className="py-4 font-normal text-sm">
                 <span className="flex flex-row justify-center">
                   <LuX className="size-5 text-mist-400" />
@@ -360,7 +360,7 @@ function App() {
               </td>
             </tr>
             <tr className="border-b border-mist-800">
-              <td className="py-4 font-normal text-start">Telemetría en tiempo real</td>
+              <td className="ps-4 py-4 font-normal text-start">Telemetría en tiempo real</td>
               <td className="py-4 font-normal text-sm">
                 <span className="flex flex-row justify-center">
                   <LuX className="size-5 text-mist-400" />
@@ -373,7 +373,7 @@ function App() {
               </td>
             </tr>
             <tr className="border-b border-mist-800">
-              <td className="py-4 font-normal text-start">Alertas automáticas</td>
+              <td className="ps-4 py-4 font-normal text-start">Alertas automáticas</td>
               <td className="py-4 font-normal text-sm">
                 <span className="flex flex-row justify-center">
                   <LuX className="size-5 text-mist-400" />
@@ -386,7 +386,7 @@ function App() {
               </td>
             </tr>
             <tr className="border-b border-mist-800">
-              <td className="py-4 font-normal text-start">Reportes e historial</td>
+              <td className="ps-4 py-4 font-normal text-start">Reportes e historial</td>
               <td className="py-4 font-normal text-sm">
                 <span className="flex flex-row justify-center">
                   <LuX className="size-5 text-mist-400" />
@@ -399,7 +399,7 @@ function App() {
               </td>
             </tr>
             <tr className="border-b border-mist-800">
-              <td className="py-4 font-normal text-start">Soporte técnico</td>
+              <td className="ps-4 py-4 font-normal text-start">Soporte técnico</td>
               <td className="py-4 font-normal text-sm">
                 <span className="flex flex-row justify-center">
                   <LuX className="size-5 text-mist-400" />
