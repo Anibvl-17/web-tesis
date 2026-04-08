@@ -106,7 +106,7 @@ function App() {
       </div>{" "}
       {/* /Problema */}
       {/* Propuesta */}
-      <div className="py-8 px-96 flex flex-row justify-between items-center gap-24">
+      <div className="py-24 px-96 flex flex-row justify-between items-center gap-24">
         <div className="flex flex-col gap-6">
           <h2 className="text-3xl/snug font-bold">
             Sistema IoT para Monitoreo y Control <br />
