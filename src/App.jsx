@@ -28,7 +28,7 @@ function App() {
         </p>
       </div>
       {/* Problema */}
-      <div className="bg-mist-900 py-8 px-96 text-center">
+      <div className="bg-mist-900 py-24 px-96 text-center">
         <h2 className="text-3xl/relaxed font-bold">
           Los controladores actuales limitan tu producción
         </h2>
@@ -36,7 +36,7 @@ function App() {
           Los equipos importados no están pensados para los ceramistas. Te explicamos porqué:
         </p>
         {/* Explicacion Problemas */}
-        <div className="text-start flex flex-row flex-wrap gap-8 mt-8">
+        <div className="text-start flex flex-row flex-wrap gap-8 mt-12">
           {/* Usabilidad limitada */}
           <div className="bg-black border border-gray-700 rounded-md transition-all hover:border-red-500 px-8 py-8 flex flex-row gap-4 flex-1 min-w-md hover:scale-104 shadow-lg">
             <span>
