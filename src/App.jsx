@@ -12,7 +12,7 @@ import { BiX } from "react-icons/bi";
 function App() {
   return (
     <>
-      <nav className="w-full px-96 py-4 justify-between shadow-lg sticky border-b border-b-gray-800">
+      <nav className="bg-black w-full px-96 py-4 justify-between shadow-lg fixed border-b border-b-gray-800">
         <span className="flex flex-row gap-4 items-center text-white font-bold">
           <img src={logo} alt="Logo argilla" className="size-10" />
           <p className="italic text-xl">
@@ -415,6 +415,31 @@ function App() {
         </table>
       </div>
       {/* /Tabla comparativa */}
+      <span className="bg-mist-600 w-full"></span>
+      {/* Footer */}
+      <footer className="py-12 px-96 flex flex-row justify-between border-t border-t-gray-800">
+        <div className="max-w-sm text-pretty">
+          <span className="text-lg font-semibold italic"><span className="text-red-500">a</span>rgillá hornos</span>
+          <p className="text-sm text-mist-400 mt-4">
+            Diseño, manufactura y comercialización de hornos eléctricos para cerámica. Soluciones personalizadas para ceramistas en Chile y el mundo.
+          </p>
+        </div>
+        <div>
+          <span className="font-semibold">Navegación</span>
+          <div className="mt-4 text-sm flex flex-row gap-24">
+            <div className="flex flex-col gap-4 text-mist-400">
+              <a className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer">Inicio</a>
+              <a className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer">Problema</a>
+              <a className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer">Propuesta</a>
+            </div>
+            <div className="flex flex-col gap-4 text-mist-400">
+              <a className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer">Funcionalidades</a>
+              <a className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer">Tabla comparativa</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* /Footer */}
     </>
   );
 }
