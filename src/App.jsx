@@ -398,7 +398,7 @@ function App() {
                 </span>
               </td>
             </tr>
-            <tr className="border-b border-mist-800">
+            <tr>
               <td className="ps-4 py-4 font-normal text-start">Soporte técnico</td>
               <td className="py-4 font-normal text-sm">
                 <span className="flex flex-row justify-center">
