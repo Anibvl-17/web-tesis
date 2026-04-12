@@ -11,7 +11,7 @@ import { TbReportAnalytics } from "react-icons/tb";
 function App() {
   return (
     <>
-      <nav className="bg-black w-full px-96 py-4 shadow-lg fixed border-b border-b-gray-800 flex flex-row justify-between items-center">
+      <nav className="bg-black w-full px-96 py-4 shadow-lg fixed border-b border-b-gray-800 flex flex-row justify-between items-center z-10">
         <span className="flex flex-row gap-4 items-center text-white font-bold">
           <img src={logo} alt="Logo argilla" className="size-10" />
           <p className="italic text-xl">
