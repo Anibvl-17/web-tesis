@@ -8,11 +8,12 @@ import { LuChartSpline, LuX } from "react-icons/lu";
 import { PiPulseBold } from "react-icons/pi";
 import { TbReportAnalytics } from "react-icons/tb";
 import FeatureCard from "./components/FeatureCard";
+import AnchorLink from "./components/AnchorLink";
 
 function App() {
   return (
     <>
-      <nav className="bg-black w-full px-96 py-4 shadow-lg fixed border-b border-b-gray-800 flex flex-row justify-between items-center z-10">
+      <nav className="bg-black w-full px-72 py-4 shadow-lg fixed border-b border-b-gray-800 flex flex-row justify-between items-center z-10">
         <span className="flex flex-row gap-4 items-center text-white font-bold">
           <img src={logo} alt="Logo argilla" className="size-10" />
           <p className="italic text-xl">
@@ -20,35 +21,15 @@ function App() {
           </p>
         </span>
         <div className="flex flex-row gap-8 text-sm text-mist-400">
-          <a
-            href="#problema"
-            className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer"
-          >
-            Problema
-          </a>
-          <a
-            href="#propuesta"
-            className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer"
-          >
-            Propuesta
-          </a>
-          <a
-            href="#funcionalidades"
-            className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer"
-          >
-            Funcionalidades
-          </a>
-          <a
-            href="#tabla"
-            className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer"
-          >
-            Tabla comparativa
-          </a>
+          <AnchorLink href="#problema" text="Problema" />
+          <AnchorLink href="#propuesta" text="Propuesta" />
+          <AnchorLink href="#funcionalidades" text="Funcionalidades" />
+          <AnchorLink href="#tabla" text="Tabla comparativa" />
         </div>
       </nav>
 
       {/* HERO */}
-      <div className="px-96 py-42 text-center" id="inicio">
+      <div className="px-72 py-42 text-center" id="inicio">
         <h1 className="text-6xl/normal font-bold pb-12 mt-24">
           El control de tu horno desde <br />
           <span className="text-red-500">la palma de tu mano</span>
@@ -60,7 +41,7 @@ function App() {
       </div>
 
       {/* Problema */}
-      <div className="bg-mist-900 py-24 px-96 text-center" id="problema">
+      <div className="bg-mist-900 py-24 px-72 text-center" id="problema">
         <h2 className="text-3xl/relaxed font-bold">
           Los controladores actuales limitan tu producción
         </h2>
@@ -104,7 +85,7 @@ function App() {
       {/* /Problema */}
 
       {/* Propuesta */}
-      <div className="py-24 px-96 flex flex-row justify-between items-center gap-24" id="propuesta">
+      <div className="py-24 px-72 flex flex-row justify-between items-center gap-24" id="propuesta">
         <div className="flex flex-col gap-6">
           <h2 className="text-3xl/snug font-bold">
             Sistema IoT para Monitoreo y Control de Hornos Cerámicos Eléctricos
@@ -199,7 +180,7 @@ function App() {
       {/* /Propuesta */}
 
       {/* Funcionalidades */}
-      <div className="bg-mist-900 py-24 px-96 text-center" id="funcionalidades">
+      <div className="bg-mist-900 py-24 px-72 text-center" id="funcionalidades">
         <h2 className="text-3xl/relaxed font-bold">Todo lo que necesitas, en un solo lugar.</h2>
         <p className="text-gray-400">
           Un ecosistema que te da autonomía, seguridad y control sobre tu producción.
@@ -259,7 +240,7 @@ function App() {
       {/* /Funcionalidades */}
 
       {/* Tabla comparativa */}
-      <div className="py-24 px-96 text-center flex flex-col" id="tabla">
+      <div className="py-24 px-72 text-center flex flex-col" id="tabla">
         <h2 className="text-4xl/relaxed font-bold">La diferencia es clara</h2>
         <p className="text-gray-400">
           Compara las características de los controladores tradicionales con el sistema IoT de
@@ -370,7 +351,7 @@ function App() {
       <span className="bg-mist-600 w-full"></span>
 
       {/* Footer */}
-      <footer className="py-12 px-96 flex flex-row justify-between border-t border-t-gray-800">
+      <footer className="py-12 px-72 flex flex-row justify-between border-t border-t-gray-800">
         <div className="max-w-sm text-pretty">
           <span className="text-lg font-semibold italic">
             <span className="text-red-500">a</span>rgillá hornos
@@ -384,38 +365,13 @@ function App() {
           <span className="font-semibold">Navegación</span>
           <div className="mt-4 text-sm flex flex-row gap-24">
             <div className="flex flex-col gap-4 text-mist-400">
-              <a
-                href="#inicio"
-                className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer"
-              >
-                Inicio
-              </a>
-              <a
-                href="#problema"
-                className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer"
-              >
-                Problema
-              </a>
-              <a
-                href="#propuesta"
-                className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer"
-              >
-                Propuesta
-              </a>
+              <AnchorLink href="#inicio" text="Inicio" />
+              <AnchorLink href="#problema" text="Problema" />
+              <AnchorLink href="#propuesta" text="Propuesta" />
             </div>
             <div className="flex flex-col gap-4 text-mist-400">
-              <a
-                href="#funcionalidades"
-                className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer"
-              >
-                Funcionalidades
-              </a>
-              <a
-                href="#tabla"
-                className="active:text-red-500/90 transition-all duration-200 hover:text-mist-200 hover:cursor-pointer"
-              >
-                Tabla comparativa
-              </a>
+              <AnchorLink href="#funcionalidades" text="Funcionalidades" />
+              <AnchorLink href="#tabla" text="Tabla comparativa" />
             </div>
           </div>
         </div>
