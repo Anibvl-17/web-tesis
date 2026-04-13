@@ -17,11 +17,11 @@ function App() {
 
   const handleToggleSimulationStatus = () => toggleSimulationStatus(!simulationStatus);
 
-  const handleDetailsClick = () => toast("message");
+  const handleDetailsClick = () => toast("¡Próximamente disponible!", {});
 
   return (
     <>
-      <Toaster />
+      <Toaster theme="dark"/>
       <nav className="bg-black w-full md:px-48 lg:px-64 py-4 shadow-lg fixed border-b border-b-gray-800 flex flex-row justify-between items-center z-10">
         <span className="flex flex-row gap-4 items-center text-white font-bold">
           <img src={logo} alt="Logo argilla" className="size-10" />
@@ -105,7 +105,7 @@ function App() {
           </p>
 
           {/* Caracteristicas destacables */}
-          <div className="flex flex-row gap-16 text-sm">
+          <div className="flex flex-row gap-8 text-sm">
             <div className="flex flex-col gap-3">
               <span className="flex flex-row gap-2 items-center">
                 <IoMdCheckmark className="text-red-500 size-5" /> Control remoto
@@ -181,7 +181,7 @@ function App() {
             <span className="text-mist-300 text-sm font-semibold">Esmaltado alta temperatura</span>
           </div>
 
-          <div className="flex flex-row justify-around">
+          <div className="flex flex-row justify-around flex-wrap gap-2">
             <button
               onClick={handleToggleSimulationStatus}
               className="text-sm bg-red-700 px-8 py-2 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110"
