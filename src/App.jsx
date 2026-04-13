@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <nav className="bg-black w-full px-72 py-4 shadow-lg fixed border-b border-b-gray-800 flex flex-row justify-between items-center z-10">
+      <nav className="bg-black w-full md:px-48 lg:px-64 py-4 shadow-lg fixed border-b border-b-gray-800 flex flex-row justify-between items-center z-10">
         <span className="flex flex-row gap-4 items-center text-white font-bold">
           <img src={logo} alt="Logo argilla" className="size-10" />
           <p className="italic text-xl">
@@ -34,7 +34,7 @@ function App() {
       </nav>
 
       {/* HERO */}
-      <div className="px-72 py-42 text-center" id="inicio">
+      <div className="md:px-48 lg:px-64 py-42 text-center" id="inicio">
         <h1 className="text-6xl/normal font-bold pb-12 mt-24">
           El control de tu horno desde <br />
           <span className="text-red-500">la palma de tu mano</span>
@@ -46,7 +46,7 @@ function App() {
       </div>
 
       {/* Problema */}
-      <div className="bg-mist-900 py-24 px-72 text-center" id="problema">
+      <div className="bg-mist-900 py-24 md:px-48 lg:px-64 text-center" id="problema">
         <h2 className="text-3xl/relaxed font-bold">
           Los controladores actuales limitan tu producción
         </h2>
@@ -90,7 +90,7 @@ function App() {
       {/* /Problema */}
 
       {/* Propuesta */}
-      <div className="py-24 px-72 flex flex-row justify-between items-center gap-24" id="propuesta">
+      <div className="md:px-48 py-24 lg:px-64 flex flex-row justify-between items-center gap-24" id="propuesta">
         <div className="flex flex-col gap-6">
           <h2 className="text-3xl/snug font-bold">
             Sistema IoT para Monitoreo y Control de Hornos Cerámicos Eléctricos
@@ -194,7 +194,7 @@ function App() {
       {/* /Propuesta */}
 
       {/* Funcionalidades */}
-      <div className="bg-mist-900 py-24 px-72 text-center" id="funcionalidades">
+      <div className="bg-mist-900 py-24 md:px-48 lg:px-64 text-center" id="funcionalidades">
         <h2 className="text-3xl/relaxed font-bold">Todo lo que necesitas, en un solo lugar.</h2>
         <p className="text-gray-400">
           Un ecosistema que te da autonomía, seguridad y control sobre tu producción.
@@ -254,7 +254,7 @@ function App() {
       {/* /Funcionalidades */}
 
       {/* Tabla comparativa */}
-      <div className="py-24 px-72 text-center flex flex-col" id="tabla">
+      <div className="py-24 md:px-48 lg:px-64 text-center flex flex-col" id="tabla">
         <h2 className="text-4xl/relaxed font-bold">La diferencia es clara</h2>
         <p className="text-gray-400">
           Compara las características de los controladores tradicionales con el sistema IoT de
@@ -365,7 +365,7 @@ function App() {
       <span className="bg-mist-600 w-full"></span>
 
       {/* Footer */}
-      <footer className="py-12 px-72 flex flex-row justify-between border-t border-t-gray-800">
+      <footer className="py-12 md:px-48 lg:px-64 flex flex-row justify-around border-t border-t-gray-800">
         <div className="max-w-sm text-pretty">
           <span className="text-lg font-semibold italic">
             <span className="text-red-500">a</span>rgillá hornos
