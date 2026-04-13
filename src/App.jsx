@@ -35,7 +35,7 @@ function App() {
           <AnchorLink href="#propuesta" text="Propuesta" />
           <AnchorLink href="#funcionalidades" text="Funcionalidades" />
           <AnchorLink href="#tabla" text="Tabla comparativa" />
-          <AnchorLink href="https://www.argillahornos.cl/contact" text="Contacto" external={true} />
+          <AnchorLink href="https://www.argillahornos.cl/contact" text="Contacto" target="_blank" external={true} />
         </div>
       </nav>
 
