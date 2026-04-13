@@ -214,7 +214,7 @@ function App() {
 
       {/* Funcionalidades */}
       <div className="bg-mist-900 py-24 md:px-48 lg:px-64 text-center" id="funcionalidades">
-        <h2 className="text-3xl/relaxed font-bold">Todo lo que necesitas, en un solo lugar.</h2>
+        <h2 className="text-3xl/relaxed font-bold">Todo lo que necesitas en un solo lugar</h2>
         <p className="text-gray-400">
           Un ecosistema que te da autonomía, seguridad y control sobre tu producción.
         </p>
