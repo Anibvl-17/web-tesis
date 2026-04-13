@@ -4,7 +4,7 @@ import { SiSpeedtest } from "react-icons/si";
 import { MdHistoryToggleOff, MdMoneyOff, MdOutlineNotificationsActive } from "react-icons/md";
 import { IoMdCheckmark } from "react-icons/io";
 import { RiRemoteControlLine } from "react-icons/ri";
-import { LuChartSpline, LuX } from "react-icons/lu";
+import { LuChartSpline, LuLink, LuX } from "react-icons/lu";
 import { PiPulseBold } from "react-icons/pi";
 import { TbReportAnalytics } from "react-icons/tb";
 import FeatureCard from "./components/FeatureCard";
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Toaster theme="dark"/>
+      <Toaster theme="dark" />
       <nav className="bg-black w-full md:px-48 lg:px-64 py-4 shadow-lg fixed border-b border-b-gray-800 flex flex-row justify-between items-center z-10">
         <span className="flex flex-row gap-4 items-center text-white font-bold">
           <img src={logo} alt="Logo argilla" className="size-10" />
@@ -38,15 +38,22 @@ function App() {
       </nav>
 
       {/* HERO */}
-      <div className="md:px-48 lg:px-64 py-42 text-center" id="inicio">
+      <div className="md:px-48 lg:px-64 pt-42 pb-18 text-center" id="inicio">
         <h1 className="text-6xl/normal font-bold pb-12 mt-24">
           El control de tu horno desde <br />
           <span className="text-red-500">la palma de tu mano</span>
         </h1>
-        <p className="text-gray-400 text-xl px-32">
+        <p className="text-gray-400 text-xl px-32 mb-20">
           Monitorea y controla tus quemas desde cualquier lugar, en cualquier momento. Mediciones en
           tiempo real, curvas ilimitadas y soporte técnico a tu alcance.
         </p>
+        <a
+          href="https://www.argillahornos.cl/contact"
+          target="_blank"
+          className="font-bold text-sm bg-red-700 px-12 py-3 rounded-md transition-all hover:cursor-pointer hover:brightness-110"
+        >
+          Contáctanos
+        </a>
       </div>
 
       {/* Problema */}
@@ -94,7 +101,10 @@ function App() {
       {/* /Problema */}
 
       {/* Propuesta */}
-      <div className="md:px-48 py-24 lg:px-64 flex flex-row justify-between items-center gap-24" id="propuesta">
+      <div
+        className="md:px-48 py-24 lg:px-64 flex flex-row justify-between items-center gap-24"
+        id="propuesta"
+      >
         <div className="flex flex-col gap-6">
           <h2 className="text-3xl/snug font-bold">
             Sistema IoT para Monitoreo y Control de Hornos Cerámicos Eléctricos
@@ -188,7 +198,10 @@ function App() {
             >
               {simulationStatus ? "Detener" : "Iniciar"}
             </button>
-            <button onClick={handleDetailsClick} className="text-sm border-2 border-red-800 px-8 py-1 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110 hover:bg-red-900/50">
+            <button
+              onClick={handleDetailsClick}
+              className="text-sm border-2 border-red-800 px-8 py-1 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110 hover:bg-red-900/50"
+            >
               Detalles
             </button>
           </div>
@@ -276,7 +289,7 @@ function App() {
               <th className="font-semibold text-red-500 text-center pb-4">Controlador Argillá</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="[&>tr]:hover:bg-mist-900/50 [&>tr]:transition-all">
             <tr className="border-b border-mist-800">
               <td className="ps-4 py-4 font-normal text-start">Interfaz</td>
               <td className="py-4 font-normal text-sm text-center text-mist-400">
@@ -390,6 +403,7 @@ function App() {
             <div className="flex flex-col gap-4 text-mist-400">
               <AnchorLink href="#funcionalidades" text="Funcionalidades" />
               <AnchorLink href="#tabla" text="Tabla comparativa" />
+              <AnchorLink href="https://www.argillahornos.cl/contact" target="_blank" text="Contacto" external={true}/>
             </div>
           </div>
         </div>
