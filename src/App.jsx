@@ -176,7 +176,7 @@ function App() {
           </div>
           <div className="flex flex-row items-center mb-4 flex-1">
             <div className="flex-1 flex flex-col items-center me-auto">
-              <span className="font-bold">1260 °C</span>
+              <span className="font-bold">1240 °C</span>
               <span className="text-xs text-mist-400 flex justify-center">T° Objetivo</span>
             </div>
             <div className="flex-1 flex flex-col items-center">
