@@ -10,14 +10,18 @@ import { TbReportAnalytics } from "react-icons/tb";
 import FeatureCard from "./components/FeatureCard";
 import AnchorLink from "./components/AnchorLink";
 import { useState } from "react";
+import { toast, Toaster } from "sonner";
 
 function App() {
   const [simulationStatus, toggleSimulationStatus] = useState(true);
 
   const handleToggleSimulationStatus = () => toggleSimulationStatus(!simulationStatus);
 
+  const handleDetailsClick = () => toast("message");
+
   return (
     <>
+      <Toaster />
       <nav className="bg-black w-full md:px-48 lg:px-64 py-4 shadow-lg fixed border-b border-b-gray-800 flex flex-row justify-between items-center z-10">
         <span className="flex flex-row gap-4 items-center text-white font-bold">
           <img src={logo} alt="Logo argilla" className="size-10" />
@@ -182,9 +186,9 @@ function App() {
               onClick={handleToggleSimulationStatus}
               className="text-sm bg-red-700 px-8 py-2 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110"
             >
-              Detener
+              {simulationStatus ? "Detener" : "Iniciar"}
             </button>
-            <button className="text-sm border-2 border-red-800 px-8 py-1 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110 hover:bg-red-900/50">
+            <button onClick={handleDetailsClick} className="text-sm border-2 border-red-800 px-8 py-1 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110 hover:bg-red-900/50">
               Detalles
             </button>
           </div>
