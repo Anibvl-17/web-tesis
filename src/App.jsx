@@ -11,6 +11,7 @@ import FeatureCard from "./components/FeatureCard";
 import AnchorLink from "./components/AnchorLink";
 import { useState } from "react";
 import { toast, Toaster } from "sonner";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function App() {
   const [simulationStatus, toggleSimulationStatus] = useState(true);
@@ -34,11 +35,12 @@ function App() {
           <AnchorLink href="#propuesta" text="Propuesta" />
           <AnchorLink href="#funcionalidades" text="Funcionalidades" />
           <AnchorLink href="#tabla" text="Tabla comparativa" />
+          <AnchorLink href="https://www.argillahornos.cl/contact" text="Contacto" external={true} />
         </div>
       </nav>
 
       {/* HERO */}
-      <div className="md:px-48 lg:px-64 pt-42 pb-18 text-center" id="inicio">
+      <div className="flex flex-col items-center md:px-48 lg:px-64 pt-42 pb-18 text-center" id="inicio">
         <h1 className="text-6xl/normal font-bold pb-12 mt-24">
           El control de tu horno desde <br />
           <span className="text-red-500">la palma de tu mano</span>
@@ -50,9 +52,9 @@ function App() {
         <a
           href="https://www.argillahornos.cl/contact"
           target="_blank"
-          className="font-bold text-sm bg-red-700 px-12 py-3 rounded-md transition-all hover:cursor-pointer hover:brightness-110"
+          className="flex flex-row items-center gap-2 font-bold text-sm bg-red-700 px-12 py-3 rounded-md transition-all hover:cursor-pointer hover:brightness-110"
         >
-          Contáctanos
+          Contáctanos <FaExternalLinkAlt className="h-3 w-3" />
         </a>
       </div>
 
