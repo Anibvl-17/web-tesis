@@ -9,8 +9,13 @@ import { PiPulseBold } from "react-icons/pi";
 import { TbReportAnalytics } from "react-icons/tb";
 import FeatureCard from "./components/FeatureCard";
 import AnchorLink from "./components/AnchorLink";
+import { useState } from "react";
 
 function App() {
+  const [simulationStatus, toggleSimulationStatus] = useState(true);
+
+  const handleToggleSimulationStatus = () => toggleSimulationStatus(!simulationStatus);
+
   return (
     <>
       <nav className="bg-black w-full px-72 py-4 shadow-lg fixed border-b border-b-gray-800 flex flex-row justify-between items-center z-10">
@@ -138,27 +143,33 @@ function App() {
         <div className="bg-mist-900/35 border-2 border-mist-800 w-3xl p-12 rounded-xl">
           <div className="flex justify-between items-center">
             <span className="text-sm text-mist-400">Horno argillá #30</span>
-            <span className="bg-red-900/40 text-red-500 text-sm px-2 py-0.5 rounded-md">
-              Activo
-            </span>
+            {simulationStatus ? (
+              <span className="bg-red-900/40 text-red-500 text-sm px-2 py-0.5 rounded-md">
+                Activo
+              </span>
+            ) : (
+              <span className="bg-mist-800 text-mist-400 text-sm px-2 py-0.5 rounded-md">
+                Inactivo
+              </span>
+            )}
           </div>
           <div className="border-t border-mist-700 my-2"></div>
           <div className="flex flex-col items-center gap-2 my-12">
             <span className="text-5xl font-bold flex justify-center">955 °C</span>
             <span className="text-sm text-mist-400">Temperatura actual</span>
           </div>
-          <div className="flex flex-row justify-between items-center mb-4">
-            <div className="flex flex-col items-center">
+          <div className="flex flex-row items-center mb-4 flex-1">
+            <div className="flex-1 flex flex-col items-center me-auto">
               <span className="font-bold">1260 °C</span>
               <span className="text-xs text-mist-400 flex justify-center">T° Objetivo</span>
             </div>
-            <div className="flex flex-col items-center">
-              <span className="font-bold">2:05 h</span>
+            <div className="flex-1 flex flex-col items-center">
+              <span className="font-bold">{simulationStatus ? "2:05 h" : "-:-- h"}</span>
               <span className="text-xs text-mist-400 flex justify-center">Tiempo restante</span>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex-1 flex flex-col items-center ms-auto">
               <span className="font-bold">18.2 kWh</span>
-              <span className="text-xs text-mist-400 flex justify-center">Consumo eléctrico</span>
+              <span className="text-xs text-mist-400 flex justify-center">Consumo</span>
             </div>
           </div>
           <div className="flex flex-col gap-2 border-t border-mist-700 mt-4 mb-8 py-2 text-center">
@@ -167,14 +178,17 @@ function App() {
           </div>
 
           <div className="flex flex-row justify-around">
-            <button className="text-sm bg-red-700 px-8 py-2 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110">
+            <button
+              onClick={handleToggleSimulationStatus}
+              className="text-sm bg-red-700 px-8 py-2 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110"
+            >
               Detener
             </button>
-            <button className="text-sm border-2 border-red-700 px-8 py-1 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110 hover:bg-red-900/50">
+            <button className="text-sm border-2 border-red-800 px-8 py-1 rounded-md transition-all hover:scale-105 hover:cursor-pointer hover:brightness-110 hover:bg-red-900/50">
               Detalles
             </button>
           </div>
-        </div>{" "}
+        </div>
         {/* /Representacion visual */}
       </div>
       {/* /Propuesta */}
